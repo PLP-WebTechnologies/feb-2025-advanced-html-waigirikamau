@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Contacts Page</title>
+    
+</head>
+<body>
+    <h2>Ordered List</h2>
+    <ol type="I">
+        <li>Web Development</li>
+        <li>Software Engineering</li>
+        <li>Start Up</li>
+        <li>PYthon Language</li>
+        <li>Database Management</li>
+    </ol>
+
+    <h3 style="text-align: center;">HTML IMAGE</h3>
+
+    <img src="https://images.pexels.com/photos/14896683/pexels-photo-14896683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt= "Monkeys on Grass">
+
+    
+    <h3 style="text-align: center;">HTML TABLE</h3>
+    <table width="1200">
+        <caption>Contacts</caption>
+        <thead>
+            <tr bgcolor="skyblue">
+                <th width="300">Name</th>
+                <th width="300">Address</th>
+                <th width="300"> Mobile</th>
+                <th width="300">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr bgcolor="lightgrey">
+                <td width="300">Mla Chake</td>
+                <td width="300">123 Kangundo, Nairobi</td>
+                <td width="300">0712345678</td>
+                <td width="300">Mlachake@yahoo.com</td>
+            </tr>
+            <tr bgcolor="lightgrey">
+                <td width="300">Kimani Kimanongo</td>
+                <td width="300"> Kikuyu, Kenya</td>
+                <td width="300"> 0711000000</td>
+                <td width="300">kimanongo@hotmail.com</td>
+            </tr>
+            <tr bgcolor="lightgrey">
+                <td width="300">Truthful Man</td>
+                <td width="300">Wamunyoro,Kenya</td>
+                <td width="300">012-345-670</td>
+                <td width="300">Wamunyoro@outlook.com</td>
+            </tr>
+            <tr bgcolor="lightgrey">
+                <td width="300">Kaongo Elchapo</td>
+                <td width="300">Sugoi, 2027 Express</td>
+                <td width="300">012-865-899</td>
+                <td width="300">borntolie@gov.co.ke</td>
+            </tr>
+            <tr bgcolor="lightgrey">
+                <td width="300">Napenda Mukuchu</td>
+                <td width="300">Tigania,Meru</td>
+                <td width="300">9852920399</td>
+                <td width="300">napendahela@judiciary.co.ke</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Registration Form</legend>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="yourname@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Strong password" required>
+            </div>
+            <!-- Date field with a date picker if supported in the browser -->
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <!-- Dropdown with options -->
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="">Select...</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Radio Buttons -->
+            <div class="form-group">
+                <label>Choose a subscription plan:
+                    <input type="radio" id="plan1" name="plan" value="Plan 1">
+                    <span>Plan 1</span>
+                    <input type="radio" id="plan2" name="plan" value="Plan 2">
+                    <span>Plan 2</span>
+                    <!-- Add more options as needed -->
+                </label>
+            </div>
+            <!-- Checkbox -->
+            <div class="form-group">
+                <label>I agree to the terms and conditions
+                    <input type="checkbox" id="agree" name="agree">
+                </label>
+            </div>
+            <input type="submit" value="Register">
+        </fieldset>
+    </form>
+
+    <footer>
+        <p>&copy; [WaigiriKamau] 2023</p>
+    </footer>
+
+</body>
+</html>
